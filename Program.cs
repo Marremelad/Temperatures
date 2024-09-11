@@ -7,7 +7,7 @@
             string? answer;
             int temp;
             bool isNumber;
-            //HEllO
+
             do {
                 Console.WriteLine("Ange en temperatur i grader celsius");
                 
