@@ -8,9 +8,7 @@
             
             do {
                 Console.WriteLine("Ange en temperatur i grader celsius");
-                
-                string? answer = Console.ReadLine();
-                isNumber = int.TryParse(answer, out int temp);
+                isNumber = int.TryParse(Console.ReadLine(), out int temp);
                 
                 if (isNumber) {
                     if (temp >= 30) {
