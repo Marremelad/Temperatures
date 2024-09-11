@@ -5,14 +5,13 @@
         static void Main(string[] args)
         {
             string? answer;
-            int temp;
             bool isNumber;
 
             do {
                 Console.WriteLine("Ange en temperatur i grader celsius");
                 
                 answer = Console.ReadLine();
-                isNumber = int.TryParse(answer, out temp);
+                isNumber = int.TryParse(answer, out int temp);
                 
                 if (isNumber) {
                     if (temp >= 30) {
