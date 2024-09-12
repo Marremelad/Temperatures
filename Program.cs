@@ -5,12 +5,18 @@
         static void Main(string[] args)
         {
             bool isNumber;
+            string? answer;
             
-            do {
-                Console.WriteLine("Ange en temperatur i grader celsius");
-                isNumber = int.TryParse(Console.ReadLine(), out int temp);
-                
-                if (isNumber) {
+            Console.WriteLine("Ange en temperatur i grader celsius");
+            
+            do { 
+                answer = Console.ReadLine();
+                isNumber = int.TryParse(answer, out int temp);
+
+                if (!isNumber && answer != "exit") {
+                    Console.WriteLine("Ange en temperatur eller skriv 'exit'");
+                }
+                else if (isNumber) {
                     if (temp >= 30) {
                         Console.WriteLine("Jättevarmt", Console.ForegroundColor = ConsoleColor.Red);
                     }
@@ -23,7 +29,7 @@
                     Console.ForegroundColor = ConsoleColor.White;
                 }
                 
-            } while (isNumber);
+            } while (isNumber || answer != "exit" );
         }
     }
 }
