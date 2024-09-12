@@ -5,15 +5,15 @@
         static void Main(string[] args)
         {
             bool isNumber;
-            string? answer;
+            string? userInput;
             
             Console.WriteLine("Ange en temperatur i grader celsius");
             
             do { 
-                answer = Console.ReadLine();
-                isNumber = int.TryParse(answer, out int temp);
+                userInput = Console.ReadLine();
+                isNumber = int.TryParse(userInput, out int temp);
 
-                if (!isNumber && answer != "exit") {
+                if (!isNumber && userInput != "exit") {
                     Console.WriteLine("Ange en temperatur eller skriv 'exit'");
                 }
                 else if (isNumber) {
@@ -29,7 +29,7 @@
                     Console.ForegroundColor = ConsoleColor.White;
                 }
                 
-            } while (isNumber || answer != "exit" );
+            } while (isNumber || userInput != "exit" );
         }
     }
 }
