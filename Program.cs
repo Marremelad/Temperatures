@@ -32,7 +32,7 @@ namespace Temperatures
                         Console.WriteLine("Hösttemperatur", Console.ForegroundColor = ConsoleColor.Blue);
                     }
                     Console.ForegroundColor = ConsoleColor.White;
-                }// HEllo
+                }
                 
             } while (isNumber || userInput != "exit" );
         }
