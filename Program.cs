@@ -1,4 +1,9 @@
-﻿namespace Temperatures
+﻿//Gruppuppgift - Temperatures
+//Mauricio Corte
+//.NET24
+
+namespace Temperatures
+
 {
     internal class Program
     {
@@ -27,7 +32,7 @@
                         Console.WriteLine("Hösttemperatur", Console.ForegroundColor = ConsoleColor.Blue);
                     }
                     Console.ForegroundColor = ConsoleColor.White;
-                }
+                }// HEllo
                 
             } while (isNumber || userInput != "exit" );
         }
